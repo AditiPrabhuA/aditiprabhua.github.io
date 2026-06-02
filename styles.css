@@ -309,6 +309,7 @@ h3 {
   padding: 18px;
   background: var(--paper-soft);
   box-shadow: var(--shadow);
+  transform: translateY(-48px);
 }
 
 .hero-card::before,
@@ -695,6 +696,7 @@ h3 {
   .hero-card {
     border-radius: var(--radius);
     box-shadow: none;
+    transform: none;
   }
 
   .skill-groups {
