@@ -584,7 +584,7 @@ h3 {
 .publication-list h3 {
   max-width: 980px;
   margin: 10px 0 0;
-  font-size: clamp(1.25rem, 3vw, 2.5rem);
+  font-size: clamp(1.25rem, 3vw, 0.5rem);
 }
 
 .contact-section {
