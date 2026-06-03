@@ -26,6 +26,8 @@ body {
   background-size: 36px 36px;
   color: var(--ink);
   font-family: "Inter", Arial, sans-serif;
+  /* font-family: "Space Mono", ui-monospace, monospace; */
+
 }
 
 body.nav-open {
@@ -620,8 +622,13 @@ h3 {
   font-weight: 700;
 }
 
-.site-footer p {
+.site-footer p,
+.site-footer a {
   margin-bottom: 0;
+}
+
+.site-footer a:hover {
+  color: var(--ink);
 }
 
 @media (max-width: 900px) {
