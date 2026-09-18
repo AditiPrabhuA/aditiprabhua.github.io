@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Personal website of Aditi Prabhu A, a backend and infrastructure engineer building production cloud services, data systems, and AI pipelines."
+      content="Personal website of Aditi Prabhu A, founding Software Development Engineer building backend platforms, AI-agent systems, and AWS infrastructure for financial operations."
     />
-    <title>Aditi Prabhu A | Backend & Infrastructure Engineer</title>
+    <title>Aditi Prabhu A | Software Development Engineer I</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,12 +39,12 @@
       <main>
         <section class="hero section-grid" aria-labelledby="intro-title">
           <div class="hero-copy">
-            <p class="eyebrow">Backend systems / AWS cloud infrastructure / data platforms</p>
+            <p class="eyebrow">Backend / AI agents / cloud infrastructure</p>
             <h3 id="intro-title">
-              Currently building reliable financial systems and scalable cloud backends.
+              Building backends, agents, and cloud infrastructure for financial operations.
             </h3>
             <p class="hero-summary">
-              Hi, I'm Aditi. I enjoy building the systems behind the product — the databases, workflows, and services that quietly keep everything moving.
+              Hi, I'm Aditi, a founding engineer at OneCap. I work on the services, data layer, and AI agents that keep reconciliation and internal platforms running in production.
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="#contact">Let's talk</a>
@@ -62,14 +62,14 @@
         <section class="split-section" id="about" aria-labelledby="about-title">
           <div>
             <p class="eyebrow">About</p>
-            <h3 id="about-title">Engineer for systems that need to keep working</h3>
+            <h3 id="about-title">Engineer for systems that have to keep working</h3>
           </div>
           <div class="about-copy">
             <p>
-              My work spans backend systems, cloud infrastructure, databases, and automation. I've built microservices, designed scalable PostgreSQL architectures, optimized engineering workflows, and developed cloud-native services and orchestration workflows on AWS.
+              Most of my time goes into production backends on AWS: APIs, PostgreSQL, and the automation around them. Lately that also means long-running agents for reconciliation and internal engineering work.
             </p>
             <p>
-              What interests me most is infrastructure that quietly does its job well — systems that scale predictably, recover gracefully, and make data trustworthy.
+              I care about infrastructure that stays boring in the best way: predictable under load, recoverable when something fails, and honest about the data it holds.
             </p>
           </div>
         </section>
@@ -86,15 +86,43 @@
                 <img src="images/logo-mark.svg" alt="" />
               </div>
               <div class="timeline-meta">
-                <span>Jan 2025 - Present</span>
+                <span>Jul 2025 - Present</span>
                 <span>Bangalore</span>
               </div>
               <div class="timeline-content">
-                <h3>Software Development Engineer</h3>
-                <p class="role-company">Onecap Technologies, FinTech Startup</p>
+                <h3>Software Development Engineer I</h3>
+                <p class="role-company">OneCap Technologies Private Limited</p>
                 <p class="timeline-summary">
-                  Founding engineering team member building scalable backend systems and automation workflows across AWS, PostgreSQL, microservices, and CI/CD.
+                  Full-time founding engineer on an AI-native fintech stack: backends, data, and agents that run financial operations in production.
                 </p>
+                <ul>
+                  <li>Built backend platforms in Python, FastAPI, TypeScript, PostgreSQL/Aurora, and AWS across reconciliation, ingestion, confirmations, and internal tools.</li>
+                  <li>Designed PostgreSQL schemas and FDW-based cross-service access, with indexing and query work aimed at high-volume financial data.</li>
+                  <li>Ran zero-downtime service migrations so existing workflows stayed available through the cutover.</li>
+                  <li>Shipped an autonomous reconciliation agent on the Claude Agent SDK and Amazon Bedrock AgentCore, handling on the order of 200K transactions, with event-driven paths on Lambda, S3, SQS, EventBridge, and SES.</li>
+                  <li>Stood up virtual engineering agents on AWS Lightsail that keep a live codebase wiki, review pull requests, and make cross-repo code and infrastructure changes.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-card">
+              <div class="experience-logo onecap-logo" aria-hidden="true">
+                <img src="images/logo-mark.svg" alt="" />
+              </div>
+              <div class="timeline-meta">
+                <span>Feb 2025 - Jun 2025</span>
+                <span>Bangalore</span>
+              </div>
+              <div class="timeline-content">
+                <h3>Software Development Intern</h3>
+                <p class="role-company">OneCap Technologies Private Limited</p>
+                <p class="timeline-summary">
+                  First stretch at OneCap: getting services onto ECS and giving the rest of the platform a shared source of truth for entity data.
+                </p>
+                <ul>
+                  <li>Deployed containerized backends on Amazon ECS and wired GitHub Actions for test, deploy, and CloudWatch monitoring.</li>
+                  <li>Wrote TypeScript REST APIs on PostgreSQL so customer and party data could be shared across services instead of copied.</li>
+                </ul>
               </div>
             </article>
 
@@ -110,9 +138,12 @@
                 <h3>Summer Research Intern</h3>
                 <p class="role-company">Center for Cloud Computing and Big Data</p>
                 <p class="timeline-summary">
-                  Built distributed edge anomaly detection and remediation workflows
-                  with PySpark, Hadoop, MQTT, and IoT infrastructure.
+                  Summer research on anomaly detection at the edge, with pipelines that could also kick off remediation.
                 </p>
+                <ul>
+                  <li>Ran PySpark and Hadoop jobs over edge-network data and reached 99% detection accuracy on the evaluation set.</li>
+                  <li>Tied detections into MQTT IoT paths and CI/CD so response was not a fully manual process.</li>
+                </ul>
               </div>
             </article>
           </div>
@@ -127,29 +158,44 @@
           <div class="project-grid">
             <article class="project-card">
               <div class="project-number">01</div>
-              <p class="project-tag">Python / PyTorch / Graph RAG</p>
-              <h3>Lucid Care</h3>
+              <p class="project-tag">Python / FastAPI / PostgreSQL / AWS / MCP</p>
+              <h3><a href="https://agentrealm.dev">Agent Realm</a></h3>
               <p>
-                Multi-stage ML pipeline for large-scale clinical data processing,
-                prediction, and recommendation workloads.
+                Performance management for always-on agents: operators set goals, agents check in over MCP, humans review the trail.
               </p>
               <ul>
-                <li>Processed clinical datasets with a pipeline reaching 96% model accuracy.</li>
-                <li>Integrated knowledge graphs and Graph RAG to improve reasoning quality.</li>
+                <li>
+                  Checkpoint runs as a FastAPI and PostgreSQL service on AWS, with a dashboard for goals, evidenced check-ins, and feedback.
+                </li>
+                <li>
+                  Agents use hashed API keys to pull work and file updates through the same domain logic as the UI, so there is one record per agent.
+                </li>
               </ul>
             </article>
 
             <article class="project-card">
               <div class="project-number">02</div>
+              <p class="project-tag">Python / PyTorch / Graph RAG</p>
+              <h3>Lucid Care</h3>
+              <p>
+                Clinical prediction and recommendation work that needed more than a black-box score.
+              </p>
+              <ul>
+                <li>Multi-stage PyTorch pipeline over large clinical datasets, with 96% accuracy on the prediction task we evaluated.</li>
+                <li>Knowledge graphs and Graph RAG in the loop to ground recommendations and cut false positives.</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-number">03</div>
               <p class="project-tag">PySpark / Hadoop / Python / PyTorch</p>
               <h3>Sentinel Edge</h3>
               <p>
-                Distributed anomaly detection and automated incident response at the
-                network edge.
+                Anomaly detection at the network edge, with automated response instead of a human in the loop for every alert.
               </p>
               <ul>
-                <li>Developed detection pipelines across edge computing environments.</li>
-                <li>Automated incident response to reduce manual remediation work.</li>
+                <li>Distributed PySpark and Hadoop pipelines across edge nodes, with 99% detection accuracy on the evaluation set.</li>
+                <li>Once something fired, remediation ran automatically so operators were not paging through incidents by hand.</li>
               </ul>
             </article>
           </div>
@@ -163,22 +209,30 @@
           <div class="skill-groups">
             <div>
               <h3>Languages</h3>
-              <p>Python, TypeScript, Java</p>
+              <p>Python, TypeScript</p>
             </div>
             <div>
               <h3>Cloud</h3>
               <p>
                 AWS ECS Fargate, Lambda, ALB, S3, Step Functions, IAM, VPC, SES,
-                CloudFront, ECR, API Gateway, Target Groups, Lightsail, Aurora, RDS
+                CloudWatch, ECR, API Gateway, Lightsail, Aurora RDS, Cognito, EventBridge
               </p>
             </div>
             <div>
-              <h3>Backend</h3>
-              <p>FastAPI, Flask, Spring Boot, Docker, GitHub Actions</p>
+              <h3>Databases</h3>
+              <p>PostgreSQL, MongoDB</p>
             </div>
             <div>
-              <h3>Data</h3>
-              <p>PostgreSQL, MongoDB, PySpark, Hadoop</p>
+              <h3>AI / Agents</h3>
+              <p>Amazon Bedrock, AgentCore, Claude Agent SDK, OpenClaw, MCP</p>
+            </div>
+            <div>
+              <h3>Delivery</h3>
+              <p>Docker, GitHub Actions, CI/CD, Pytest, Git, Linux</p>
+            </div>
+            <div>
+              <h3>Big Data</h3>
+              <p>PySpark, Hadoop</p>
             </div>
           </div>
         </section>
@@ -192,7 +246,7 @@
           <article class="education-card">
             <div class="timeline-meta">
               <span>2021 - 2025</span>
-              <span>Bengaluru</span>
+              <span>Bangalore</span>
             </div>
             <div>
               <h3>PES University</h3>
@@ -208,12 +262,30 @@
           </div>
           <div class="publication-list">
             <article>
-              <span>ICCBDA 2025</span>
-              <h3>LLM-Empowered Autonomous Edge AI for Anomaly Detection and Resolution in Distributed Systems</h3>
+              <span>IEEE ICCBDA 2025</span>
+              <h3>
+                <a href="https://ieeexplore.ieee.org/document/11030483" target="_blank" rel="noreferrer">
+                  LLM-Empowered Autonomous Edge AI for Anomaly Detection and Resolution in Distributed Systems
+                  <svg class="doc-icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M15 3h6v6" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 14 21 3" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </h3>
             </article>
             <article>
-              <span>IntelliSys 2025</span>
-              <h3>From Black Box to Bedside: Enhancing Interpretability and Trust in AI-Assisted Medical Systems</h3>
+              <span>Springer IntelliSys 2025</span>
+              <h3>
+                <a href="https://link.springer.com/chapter/10.1007/978-3-032-07109-5_1#citeas" target="_blank" rel="noreferrer">
+                  From Black Box to Bedside: Enhancing Interpretability and Trust in AI-Assisted Medical Systems
+                  <svg class="doc-icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M15 3h6v6" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 14 21 3" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </h3>
             </article>
           </div>
         </section>
@@ -226,7 +298,7 @@
           <div class="contact-actions">
             <a class="button button-primary" href="mailto:aditiprbh@gmail.com">Email me</a>
             <a class="button button-secondary" href="https://github.com/AditiPrabhuA" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="button button-secondary" href="https://www.linkedin.com/in/aditi-prabhu-a-b12525222/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/aditiprabhua/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </section>
       </main>

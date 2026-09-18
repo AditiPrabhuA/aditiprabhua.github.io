@@ -516,6 +516,15 @@ h3 {
   line-height: 1.6;
 }
 
+.timeline-content ul {
+  margin-top: 14px;
+}
+
+.timeline-content li {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .project-card li {
   color: var(--muted);
   line-height: 1.6;
@@ -523,7 +532,7 @@ h3 {
 
 .project-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -598,6 +607,28 @@ h3 {
   max-width: 980px;
   margin: 10px 0 0;
   font-size: 1.25rem;
+}
+
+.publication-list h3 a {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: inherit;
+}
+
+.publication-list h3 a:hover {
+  color: var(--accent);
+}
+
+.doc-icon {
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  max-width: 16px;
+  margin-top: 0.3em;
+  overflow: hidden;
+  color: var(--accent);
 }
 
 .contact-section {
