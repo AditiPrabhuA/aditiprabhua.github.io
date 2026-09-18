@@ -471,6 +471,7 @@ h3 {
   border-right: 1px solid rgba(17, 17, 15, 0.12);
   border-radius: 0 18px 18px 0;
   padding: 24px 28px 24px 0;
+  color: var(--muted);
 }
 
 .education-card {
@@ -498,6 +499,7 @@ h3 {
 .timeline-content h3 {
   max-width: 800px;
   margin-bottom: 10px;
+  color: var(--ink);
   font-size: clamp(1.35rem, 2.2vw, 2rem);
   line-height: 1;
   letter-spacing: -0.05em;
@@ -518,9 +520,11 @@ h3 {
 
 .timeline-content ul {
   margin-top: 14px;
+  color: var(--muted);
 }
 
-.timeline-content li {
+.timeline-content li,
+.timeline-content li::marker {
   color: var(--muted);
   line-height: 1.6;
 }
